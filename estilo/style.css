@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: "tccc-regular";
+    src: url(/fonts/TCCC-UnityText-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "tccc-bold";
+    src: url(/fonts/TCCC-UnityText-Bold.ttf) format("truetype");
+}
+
+:root{
+    ---cor0: #F50112;
+    ---cor1: #CA222D;
+    ---cor2: #753b4e;
+    ---cor3: #4B3234;
+    ---cor4: #332B2B;
+
+    ---fonte-padrao: "tccc-regular", arial;
+
+    ---fonte-bold: 'tccc-bold', arial;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+header{
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 100px;
+}
+
+header > nav{
+    padding: 20px;
+}
+
+
+nav a{
+    font-family: var(---fonte-padrao);
+    padding: 0px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+button{
+    background-color: black;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+button > a{
+    color: white;
+    transition: 1s;
+}
+
+span#links{
+    margin: 40px;
+}
+
+
+main{
+    width: 100%;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#secao1 img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 150px;
+}
+
+#secao2{
+    text-align: center;
+    background-color: var(---cor3);
+    padding: 30px;
+    
+}
+
+h1{
+    font-family: var(---fonte-bold);
+    font-size: 2.3em;
+    margin-bottom: 50px;
+}
+
+#secao2 img{
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px 20px 0px 0px; 
+    margin-bottom: 30px;
+}
+
+#secao2 h1{
+    color: white;
+}
+
+#h3-1{
+    font-family: var(---fonte-bold);
+    font-size: 2em;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 19px;
+    color: white;
+}
+
+
+#secao2 p{
+    font-family: var(---fonte-padrao);
+}
+
+
+#pg1 > p{
+    color: white;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 18px;
+    line-height: 1.5;
+    
+}
+
+#saibamais > p{
+    font-size: 1.2em
+}
+
+
+#butsaiba{
+    background-color: white;
+    padding: 10px;
+}
+
+#butsaiba a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+} 
+
+#butsaiba a:hover{
+    text-decoration: underline;
+}
+
+div#bloco{
+    background-color: var(---cor2);
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: -34px;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 30px;
+}
+
+div.video{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-top: 56.5%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+aside h1{
+    text-align: center;
+    margin-top: 130px;
+}
+
+aside img{
+    width: 200px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+#fotos3{
+    text-align: center;
+}
+
+
+aside > button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+button > strong > a{
+    text-decoration: none;
+    color: black;
+    font-family: var(---fonte-padrao);
+    padding: 10px 200px;
+    border-radius: 20px;
+}
+
+button > strong > a:hover{
+    background-color: rgb(128, 128, 128);
+    transition: 1s;
+}
+
+.botoes{
+    font-family: var(---fonte-padrao);
+    padding: 10px 200px;
+    border-radius: 20px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.botoes:hover{
+    background-color: rgba(128, 128, 128, 0.432);
+    text-decoration: underline;
+    color: rgb(80, 80, 80);
+    transition: 1s;
+
+}
+
+div#botaodebaixo{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+
+footer{
+    text-align: center;
+    background-color: black;
+    padding-bottom: 20px;
+    padding-bottom: 30px;
+    font-size: 0.8em;
+}
+
+footer p{
+    font-family: var(---fonte-padrao);
+    color: white;
+    margin-top: 10px;
+
+}
+
+footer p#contato{
+    padding-top: 10px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer a::after{
+    content: '\00A0 \A9';
+    font-size: 10px;
+}
+
+footer img{
+    margin-top: 30px;
+    max-width: 100px;
+}
