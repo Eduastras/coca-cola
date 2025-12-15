@@ -221,29 +221,33 @@ button > strong > a:hover{
     transition: 1s;
 }
 
-.botoes{
-    font-family: var(---fonte-padrao);
-    padding: 10px 200px;
-    border-radius: 20px;
-    border: 1px solid black;
-    text-decoration: none;
-    color: black;
-}
 
 .botoes:hover{
     background-color: rgba(128, 128, 128, 0.432);
     text-decoration: underline;
     color: rgb(80, 80, 80);
     transition: 1s;
-
+    
 }
 
 div#botaodebaixo{
-    max-width: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     margin: auto;
     margin-top: 80px;
 }
 
+.botoes{
+    font-family: var(---fonte-padrao);
+    border-radius: 20px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+
+    flex: 0 1 400px;
+}
 
 footer{
     text-align: center;
