@@ -41,24 +41,28 @@ header{
 
 header > nav{
     padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+nav > img {
+    align-self: center;
 }
 
 
-nav a{
+nav ul{
     font-family: var(---fonte-padrao);
     padding: 0px 20px;
     text-decoration: none;
     color: black;
 }
 
-nav a:hover{
-    text-decoration: underline;
-}
-
 button{
     background-color: black;
     padding: 10px;
     border-radius: 30px;
+    align-self: center;
 }
 
 button > a{
@@ -66,9 +70,43 @@ button > a{
     transition: 1s;
 }
 
-span#links{
+ul#menu{
+    display: flex;
     margin: 40px;
+    cursor: pointer;
+    width: 40%;
+    justify-content: space-between;
 }
+
+li.menuitem {
+    display: inline-block;
+    list-style: none;
+}
+
+li.menuitem:hover > ul.submenu{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+ul.submenu {
+    position: absolute;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgb(221, 221, 221);
+}
+
+ul.submenu li {
+    padding: 10px;
+
+}
+
+ul.submenu li a {
+    color: black;
+    text-decoration: none;
+}
+
 
 
 main{
