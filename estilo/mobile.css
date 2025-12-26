@@ -15,11 +15,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "tcc-regular", "arial";
+    font-size: 1em;
 }
 
 header {
     padding: 15px;
     margin-bottom: 60px;
+    padding-top: 50px;
 }
 
 header div#menu {
@@ -29,8 +31,8 @@ header div#menu {
 }
 
 div#menu img {
-    width: 30%;
-    max-width: 150px;
+    width: 40%;
+    max-width: 180px;
 }
 
 nav#navegacao {
@@ -41,7 +43,7 @@ nav#navegacao {
 }
 
 nav#navegacao > i#icone {
-    font-size: 1.3em;
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
@@ -55,7 +57,7 @@ ul#lista {
 }
 
 #lista > li > a {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-decoration: none;
     color: black;
     line-height: 1.3em;
@@ -67,13 +69,13 @@ ul#lista {
 
 header a#botao {
     width: 30%;
-    max-width: 180px;
+    max-width: 300px;
     text-align: center;
     text-decoration: none;
     color: black;
     border: 1px solid black;
     border-radius: 30px;
-    padding: 10px;
+    padding: 20px;
     transition: background-color 0.3s;
 }
 
@@ -92,6 +94,7 @@ section#principal {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     padding-top: 30px;
+    padding-bottom: 100px;
 }
 
 div#imagem {
@@ -101,16 +104,68 @@ div#imagem {
 div#imagem > img {
     display: block;
     margin: auto;
-    max-width: 800px;
+    max-width: 1200px;
     width: 100%;
+    border-radius: 30px;
 }
 
 section#secundario {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     text-align: center;
+    background-color: #4B3234;
+    color: white;
 }
 
+section#secundario > h2 {
+    font-family: "tcc-bold", Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    margin: 30px;
+}
+
+section#secundario img {
+    width: 100%;
+}
+
+#bloco-secundario {
+    background-color: #753B4E;
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#bloco-secundario h3 {
+    font-family: "tcc-bold", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: 10px auto;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+#bloco-secundario p {
+    width: 80%;
+    margin: auto;
+}
+
+a#saibamais {
+    display: block;
+    margin: 30px auto;
+    width: 60%;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 50px;
+    transition: background-color 0.5s;
+}
+
+a#saibamais:hover {
+    background-color: #311114;
+    text-decoration: underline;
+}
 
 section#terceiro {
     grid-row: -2 / -1;
