@@ -73,30 +73,12 @@
     </footer>
     
     <script>
-        let menu = window.document.querySelector("i#icone")
-        let lista = window.document.querySelector("ul#lista")
-        menu.addEventListener("click", clickar)
-        window.addEventListener("resize", verificarTela)
+        let menu = window.document.querySelector("#icone")
+        let lista = window.document.querySelector("#lista")
 
-        function clickar(){
-            if (window.innerWidth < 975) {                
-                if (lista.style.display !== "block"){
-                    lista.style.display = "block"
-                } else {
-                    lista.style.display = "none"
-                }
-        }
-    }
-        function verificarTela() {
-            if (window.innerWidth >= 975) {
-                lista.style.display = "flex"
-                lista.style.flexDirection = "row"
-            } else {
-                lista.style.display = "none"
-            }
-        }
-        
-        verificarTela()
+        menu.addEventListener("click", function() {
+            lista.classList.toggle("aberto");
+        })
     </script>
 </body>
 </html>

@@ -71,6 +71,11 @@ ul#lista {
     text-decoration: underline;
 }
 
+#lista.aberto {
+    display: block;
+    
+}
+
 header a.botao {
     width: 40%;
     max-width: 300px;
@@ -323,7 +328,7 @@ nav#navegacao i#icone {
 }
 
 ul#lista {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
