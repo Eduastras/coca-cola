@@ -214,10 +214,14 @@ div#fotos img {
     max-width: 250px;
     border-radius: 30px;
     cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.219);
+    transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
 }
 
 div#fotos img:hover {
-    
+    transform: translateY(-8px) scale(1.05);    
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+
 }
 
 section#terceiro > a.botao {
@@ -227,13 +231,62 @@ section#terceiro > a.botao {
     padding: 20px;
     border: 1px solid black;
     border-radius: 30px;
-    color: black;   
+    color: rgb(44, 44, 44);   
     text-decoration: none; 
-    transition: background-color .7s, color .7s;
+    transition: background-color .7s ease, color .7s ease;
 }
 
 section#terceiro > a.botao:hover {
     background-color: black;
     color: white;
     text-decoration: underline;
+}
+
+footer {
+    padding-top: 40px;
+    background-color: black;
+    color: white;
+}
+
+footer img {
+    width: 100%;
+    max-width: 150px;
+    margin: 10px;
+}
+
+#linha {
+    border-top: 1px solid white;
+    margin: 20px 20px;
+}
+
+#informacoes {
+    margin: 20px 20px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#informacoes h2 {
+    font-size: 1.3em;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+#rodape {
+    padding: 20px 20px 90px 20px;
+}
+
+#rodape p {
+    padding-bottom: 5px;
+}
+
+#rodape a {
+    text-decoration: none;
+    color: white;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+}
+
+#rodape a::after {
+    content: " ©";
 }
