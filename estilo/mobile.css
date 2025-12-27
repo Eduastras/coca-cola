@@ -31,7 +31,7 @@ header div#menu {
     align-items: center;
 }
 
-div#menu img {
+div#logo {
     flex: 0 1 100px;
     align-self: flex-start;
 }
@@ -323,6 +323,14 @@ footer img {
     content: " ©";
 }
 
+
+@media screen and (min-width: 500px) and (max-width: 975px) {
+    
+header a.botao {
+    display: block;
+}
+
+}
 
 @media screen and (min-width: 975px) {
 
