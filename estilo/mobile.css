@@ -27,7 +27,7 @@ header {
 
 header div#menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -45,7 +45,8 @@ nav#navegacao {
 
 nav#navegacao i#icone {
     font-size: 1.8em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 ul#lista {
@@ -73,12 +74,17 @@ ul#lista {
     background-color: lightgrey;
 }
 
+li #registre-se {
+    display: inline;
+}
+
 #lista.aberto {
     display: block;
     
 }
 
 header a.botao {
+    display: none;
     width: 40%;
     max-width: 300px;
     text-align: center;
@@ -328,6 +334,7 @@ nav#navegacao i#icone {
     display: none;
 }
 
+
 ul#lista {
     display: flex !important;
     flex-direction: row;
@@ -338,6 +345,14 @@ ul#lista {
 
 ul#lista li {
     margin-right: 20px;
+}
+
+li #registre-se {
+    display: none;
+}
+
+header a.botao {
+    display: block;
 }
 
 footer {
