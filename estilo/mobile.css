@@ -270,6 +270,10 @@ footer img {
     cursor: pointer;
 }
 
+#informacoes h2:hover {
+    text-decoration: underline;
+}
+
 #rodape {
     padding: 20px 20px 90px 20px;
 }
